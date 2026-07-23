@@ -9,7 +9,7 @@ test('should contain a <p/> element with specific text, <h1/>, and an <img/>', (
   const headingElement = screen.getByRole('heading', { name: /school dashboard/i });
   const paragraphElement = screen.getByText(/login to access the full dashboard/i);
   const footerParagraphElement = screen.getByText(footerRegex);
-  const imgElement = screen.getByRole('img');
+  const imgElement = screen.getByAltText(/holberton logo/i);
 
   expect(headingElement).toBeInTheDocument();
   expect(paragraphElement).toBeInTheDocument();
