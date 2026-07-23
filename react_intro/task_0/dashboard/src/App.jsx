@@ -2,7 +2,7 @@ import HolbertonLogo from './assets/holberton-logo.jpg';
 import './App.css'
 function App() {
   return (
-    <div className="App">>
+    <div className="App">
       <div className='App-header'>
         <img className='App-logo' src={HolbertonLogo} alt='holberton logo'></img>
         <h1>School dashboard</h1>
