@@ -35,7 +35,7 @@ describe('Notifications component', () => {
     const buttonElement = screen.getByRole('button', { name: /close/i });
     fireEvent.click(buttonElement);
 
-    expect(consoleSpy).toHaveBeenCalled();
+    expect(consoleSpy).toHaveBeenCalledWith(expect.stringMatching(/close button has been clicked/i));
     consoleSpy.mockRestore();
   });
 });
